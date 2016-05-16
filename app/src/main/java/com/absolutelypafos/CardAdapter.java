@@ -1,16 +1,17 @@
 package com.absolutelypafos;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,32 +25,32 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder>{
         mItems = new ArrayList<Movie>();
         activitystored = activity;
         Movie movie = new Movie();
-        movie.setName("The Amazing Spider-Man 2");
+        movie.setName("The Institution");
         movie.setThumbnail(R.drawable.ic_home);
         mItems.add(movie);
 
         movie = new Movie();
-        movie.setName("X-men: Days of Future Past");
+        movie.setName("Message From Chairman");
         movie.setThumbnail(R.drawable.ic_home);
         mItems.add(movie);
 
         movie = new Movie();
-        movie.setName("The Hunger Game");
+        movie.setName("Our Logo");
         movie.setThumbnail(R.drawable.ic_home);
         mItems.add(movie);
 
         movie = new Movie();
-        movie.setName("Guardians of the Galaxy");
+        movie.setName("Our Dreams");
         movie.setThumbnail(R.drawable.ic_home);
         mItems.add(movie);
 
         movie = new Movie();
-        movie.setName("Maleficent");
+        movie.setName("Our Proposal");
         movie.setThumbnail(R.drawable.ic_home);
         mItems.add(movie);
 
         movie = new Movie();
-        movie.setName("How to Train Your Dragon 2");
+        movie.setName("Gallery");
         movie.setThumbnail(R.drawable.ic_home);
         mItems.add(movie);
 
@@ -92,7 +93,7 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder>{
         public ImageView imgThumbnail;
         public TextView tvMovie;
 
-        public ViewHolder(View itemView) {
+        public ViewHolder(final View itemView) {
             super(itemView);
             imgThumbnail = (ImageView)itemView.findViewById(R.id.img_thumbnail);
             tvMovie = (TextView)itemView.findViewById(R.id.tv_movie);
@@ -102,8 +103,29 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder>{
                     int position = getAdapterPosition();
                     switch (position) {
                         case 0:
-                            Intent myIntent = new Intent(activitystored, Test.class);
+                            Intent myIntent = new Intent(activitystored, Gallery.class);
                             activitystored.startActivity(myIntent);
+                            break;
+                        case 1:
+
+                            Intent myIntent1 = new Intent(activitystored, Gallery.class);
+                            activitystored.startActivity(myIntent1);
+                            break;
+                        case 2:
+                            Intent myIntent2 = new Intent(activitystored, Gallery.class);
+                            activitystored.startActivity(myIntent2);
+                            break;
+                        case 3:
+                            Intent myIntent3 = new Intent(activitystored, Gallery.class);
+                            activitystored.startActivity(myIntent3);
+                            break;
+                        case 4:
+                            Intent myIntent4 = new Intent(activitystored, Gallery.class);
+                            activitystored.startActivity(myIntent4);
+                            break;
+                        case 5:
+                            Intent myIntent5 = new Intent(activitystored, Gallery.class);
+                            activitystored.startActivity(myIntent5);
                             break;
 
                         default:

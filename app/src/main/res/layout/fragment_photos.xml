@@ -11,6 +11,8 @@
     tools:context=".MainActivity"
     android:background="#D3D3D3">
 
+
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="wrap_content"
