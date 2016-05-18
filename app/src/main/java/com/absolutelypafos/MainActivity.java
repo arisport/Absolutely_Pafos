@@ -3,6 +3,7 @@ package com.absolutelypafos;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.support.v4.widget.DrawerLayout;
@@ -22,6 +23,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.absolutelypafos.adapter.NavDrawerListAdapter;
+import com.absolutelypafos.app.PrefManager;
 import com.absolutelypafos.model.NavDrawerItem;
 
 import java.util.ArrayList;
@@ -158,6 +160,15 @@ public class MainActivity extends ActionBarActivity {
         switch (item.getItemId()) {
            case R.id.action_settings:
                 return true;
+            case R.id.action_showIntro:
+                // We normally won't show the welcome slider again in real app
+                PrefManager prefManager = new PrefManager(getApplicationContext());
+
+                // make first time launch TRUE
+                prefManager.setFirstTimeLaunch(true);
+
+                startActivity(new Intent(MainActivity.this, WelcomeActivity.class));
+                finish();
             default:
                 return super.onOptionsItemSelected(item);
        }
