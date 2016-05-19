@@ -26,38 +26,40 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder>{
         activitystored = activity;
         Movie movie = new Movie();
         movie.setName("The Institution");
-        movie.setThumbnail(R.drawable.ic_home);
+        movie.setThumbnail(R.drawable.institution);
         mItems.add(movie);
 
         movie = new Movie();
         movie.setName("Message From Chairman");
-        movie.setThumbnail(R.drawable.ic_home);
+        movie.setThumbnail(R.drawable.institution2);
         mItems.add(movie);
 
         movie = new Movie();
         movie.setName("Our Logo");
-        movie.setThumbnail(R.drawable.ic_home);
+        movie.setThumbnail(R.drawable.institution3);
         mItems.add(movie);
 
         movie = new Movie();
         movie.setName("Our Dreams");
-        movie.setThumbnail(R.drawable.ic_home);
+        movie.setThumbnail(R.drawable.institution4);
         mItems.add(movie);
 
         movie = new Movie();
-        movie.setName("Our Proposal");
-        movie.setThumbnail(R.drawable.ic_home);
+        movie.setName("Historical Overview");
+        movie.setThumbnail(R.drawable.institution5);
         mItems.add(movie);
 
         movie = new Movie();
-        movie.setName("Gallery");
-        movie.setThumbnail(R.drawable.ic_home);
+        movie.setName("Photos");
+        movie.setThumbnail(R.drawable.institution6);
         mItems.add(movie);
 
         movie = new Movie();
-        movie.setName("What If");
-        movie.setThumbnail(R.drawable.ic_home);
+        movie.setName("Videos");
+        movie.setThumbnail(R.drawable.institution7);
         mItems.add(movie);
+
+
     }
 
     @Override
@@ -103,12 +105,12 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder>{
                     int position = getAdapterPosition();
                     switch (position) {
                         case 0:
-                            Intent myIntent = new Intent(activitystored, Gallery.class);
+                            Intent myIntent = new Intent(activitystored, TheInstitutionWebView.class);
                             activitystored.startActivity(myIntent);
                             break;
                         case 1:
 
-                            Intent myIntent1 = new Intent(activitystored, Gallery.class);
+                            Intent myIntent1 = new Intent(activitystored, Videos.class);
                             activitystored.startActivity(myIntent1);
                             break;
                         case 2:
@@ -124,9 +126,15 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder>{
                             activitystored.startActivity(myIntent4);
                             break;
                         case 5:
-                            Intent myIntent5 = new Intent(activitystored, Gallery.class);
+                            Intent myIntent5 = new Intent(activitystored, CategoriesGalleryFragment.class);
                             activitystored.startActivity(myIntent5);
                             break;
+
+                        case 6:
+                            Intent myIntent6 = new Intent(activitystored, Videos.class);
+                            activitystored.startActivity(myIntent6);
+                            break;
+
 
                         default:
                             break;

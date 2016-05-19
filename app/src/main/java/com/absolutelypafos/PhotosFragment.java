@@ -17,8 +17,8 @@ public class PhotosFragment extends Fragment {
 
     RecyclerView mRecyclerView;
     RecyclerView.LayoutManager mLayoutManager;
-    RecyclerView.Adapter mAdapter;
-    final StaggeredGridLayoutManager gridLayoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
+    RecyclerView.Adapter mAdapter;                                                                              //vertical
+    final StaggeredGridLayoutManager gridLayoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.HORIZONTAL);
 	public PhotosFragment(){}
 	
 	@Override
@@ -32,7 +32,7 @@ public class PhotosFragment extends Fragment {
 
 
         mLayoutManager = new LinearLayoutManager(getActivity());
-        mRecyclerView.setLayoutManager(gridLayoutManager);
+        mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
         mAdapter = new CardAdapter(this.getActivity());
         mRecyclerView.setAdapter(mAdapter);

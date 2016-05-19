@@ -66,5 +66,21 @@
     <string name="play_again">Play Again</string>
     <string name="title_activity_welcome">WelcomeActivity</string>
 
+    <!-- youtube -->
+
+    <string name="title_logo">Welcome To Our Videos</string>
+    <string name="btn_skip_intro">Skip Intro</string>
+
+
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="title_activity_videos">Videos</string>
+    <string name="player_error">Error initializing YouTube player</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+    <string name="title_activity_categories_gallery_fragment">Photo Albums</string>
+    <string name="title_activity_timeline_photos">Timeline Photos</string>
+    <string name="title_activity_the_institution_web_view">The Institution</string>
+
+
 
 </resources>
