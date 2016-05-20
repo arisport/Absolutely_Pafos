@@ -107,32 +107,39 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder>{
                         case 0:
                             Intent myIntent = new Intent(activitystored, TheInstitutionWebView.class);
                             activitystored.startActivity(myIntent);
+                            activitystored.overridePendingTransition(R.anim.rotate_out, R.anim.rotate_in);
                             break;
                         case 1:
 
                             Intent myIntent1 = new Intent(activitystored, Videos.class);
                             activitystored.startActivity(myIntent1);
+                            activitystored.overridePendingTransition(R.anim.rotate_out, R.anim.rotate_in);
                             break;
                         case 2:
                             Intent myIntent2 = new Intent(activitystored, Gallery.class);
                             activitystored.startActivity(myIntent2);
+                            activitystored.overridePendingTransition(R.anim.rotate_out, R.anim.rotate_in);
                             break;
                         case 3:
                             Intent myIntent3 = new Intent(activitystored, Gallery.class);
                             activitystored.startActivity(myIntent3);
+                            activitystored.overridePendingTransition(R.anim.rotate_out, R.anim.rotate_in);
                             break;
                         case 4:
                             Intent myIntent4 = new Intent(activitystored, Gallery.class);
                             activitystored.startActivity(myIntent4);
+                            activitystored.overridePendingTransition(R.anim.rotate_out, R.anim.rotate_in);
                             break;
                         case 5:
                             Intent myIntent5 = new Intent(activitystored, CategoriesGalleryFragment.class);
                             activitystored.startActivity(myIntent5);
+                            activitystored.overridePendingTransition(R.anim.rotate_out, R.anim.rotate_in);
                             break;
 
                         case 6:
                             Intent myIntent6 = new Intent(activitystored, Videos.class);
                             activitystored.startActivity(myIntent6);
+                            activitystored.overridePendingTransition(R.anim.rotate_out, R.anim.rotate_in);
                             break;
 
 

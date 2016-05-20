@@ -78,6 +78,12 @@ public class Gallery extends AppCompatActivity {
         fetchImages();
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.rotate_out, R.anim.rotate_in);
+    }
+
     private void fetchImages() {
 
         pDialog.setMessage("Downloading Photos...");

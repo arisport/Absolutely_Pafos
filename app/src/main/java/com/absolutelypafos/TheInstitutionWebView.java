@@ -116,7 +116,7 @@ public class TheInstitutionWebView extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        //overridePendingTransition(R.anim.rotate_out, R.anim.rotate_in);
+        overridePendingTransition(R.anim.rotate_out, R.anim.rotate_in);
     }
 
     @Override
