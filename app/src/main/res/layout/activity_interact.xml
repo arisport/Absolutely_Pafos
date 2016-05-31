@@ -1,0 +1,91 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/getDirections"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:text="Detailed Directions"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:paddingRight="10dp"/>
+
+            <!--
+            <Button
+                android:id="@+id/getSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:text="Search"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:paddingRight="10dp"/>
+
+               -->
+
+        </fragment>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_modes"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#80000000"
+        android:padding="4dp" >
+
+        <RadioButton
+            android:id="@+id/rb_driving"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Driving"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:checked="true" />
+
+
+
+
+        <RadioButton
+            android:id="@+id/rb_walking"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Walking"
+            android:layout_weight="1"
+             />
+
+    </RadioGroup>
+
+
+
+</FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

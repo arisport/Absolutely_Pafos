@@ -1,8 +1,9 @@
 package com.absolutelypafos;
 
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
@@ -11,16 +12,15 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.InputType;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.absolutelypafos.adapter.NavDrawerListAdapter;
 import com.absolutelypafos.app.PrefManager;
@@ -169,6 +169,9 @@ public class MainActivity extends ActionBarActivity {
 
                 startActivity(new Intent(MainActivity.this, WelcomeActivity.class));
                 finish();
+            case R.id.change_city:
+                showInputDialog();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
        }
@@ -197,34 +200,34 @@ public class MainActivity extends ActionBarActivity {
                 fragment = new HomeFragment();
                 break;
             case 1:
-                fragment = new FindPeopleFragment();
+                fragment = new VisitCyprusFragment();
                 break;
             case 2:
                 fragment = new PhotosFragment();
                 break;
             case 3:
-                fragment = new CommunityFragment();
+                fragment = new AttractionsFragment();
                 break;
             case 4:
-                fragment = new PagesFragment();
+                fragment = new BusesFragment();
                 break;
             case 5:
-                fragment = new WhatsHotFragment();
+                fragment = new MapsFragment();
                 break;
             case 6:
-                fragment = new HomeFragment();
+                fragment = new LookingForFragment();
                 break;
             case 7:
-                fragment = new FindPeopleFragment();
+                fragment = new LookingForFragment();
                 break;
             case 8:
-                fragment = new PhotosFragment();
+                fragment = new WeatherFragment();
                 break;
             case 9:
-                fragment = new CommunityFragment();
+                fragment = new AttractionsFragment();
                 break;
             case 10:
-                fragment = new PagesFragment();
+                fragment = new BusesFragment();
                 break;
 
             default:
@@ -263,6 +266,25 @@ public class MainActivity extends ActionBarActivity {
         super.onPostCreate(savedInstanceState);
         // Sync the toggle state after onRestoreInstanceState has occurred.
         mDrawerToggle.syncState();
+    }
+
+    private void showInputDialog(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Change city");
+        final EditText input = new EditText(this);
+        input.setInputType(InputType.TYPE_CLASS_TEXT);
+        builder.setView(input);
+        builder.setPositiveButton("Go", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                changeCity(input.getText().toString());
+            }
+        });
+        builder.show();
+    }
+
+    public void changeCity(String city){
+        new CityPreference(this).setCity(city);
     }
 
     @Override

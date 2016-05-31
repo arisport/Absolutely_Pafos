@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/one"
+        android:title="Show/Hide Restaurants"
+        />
+
+    <item
+        android:id="@+id/two"
+        android:title="Show/Hide Bars"/>
+
+    <item
+        android:id="@+id/three"
+        android:title="Show/Hide Clubs"/>
+    <item
+        android:id="@+id/four"
+        android:title="Show/Hide Banks"/>
+    <item
+        android:id="@+id/fifth"
+        android:title="Show/Hide Pharmacy"/>
+    <item
+        android:id="@+id/sixth"
+        android:title="Show/Hide Gas Stations"/>
+    <item
+        android:id="@+id/seventh"
+        android:title="Show/Hide Shopping locations"/>
+    <item
+        android:id="@+id/eigth"
+        android:title="Show/Hide Museums"/>
+    <item
+        android:id="@+id/nineth"
+        android:title="Show/Hide Hospitals"/>
+    <item
+        android:id="@+id/tenth"
+        android:title="Show/Hide Cafe"/>
+
+</menu>

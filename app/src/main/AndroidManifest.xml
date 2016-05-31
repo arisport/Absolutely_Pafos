@@ -16,6 +16,10 @@
         android:icon="@mipmap/launcher"
         android:label="@string/app_name"
         android:theme="@style/CustomActionBarTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAFvFLsZXiMbqTPMXpDMOvEpBszX6bO-5g" />
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
@@ -37,18 +41,324 @@
         <activity
             android:name=".Videos"
             android:label="@string/title_activity_videos" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.absolutelypafos.MainActivity" />
         </activity>
         <activity
             android:name=".CategoriesGalleryFragment"
             android:label="@string/title_activity_categories_gallery_fragment" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.absolutelypafos.MainActivity" />
         </activity>
         <activity
             android:name=".TimelinePhotos"
             android:label="@string/title_activity_timeline_photos" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.absolutelypafos.MainActivity" />
         </activity>
         <activity
-            android:name=".TheInstitutionWebView"
+            android:name=".webviews.TheInstitutionWebView"
             android:label="@string/title_activity_the_institution_web_view" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.absolutelypafos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".webviews.AboutCyprusWebView"
+            android:label="@string/title_activity_about" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.absolutelypafos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".webviews.EntryWebView"
+            android:label="@string/title_activity_entry" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.absolutelypafos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".webviews.MessageWebView"
+            android:label="@string/title_activity_message_web_view" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.absolutelypafos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".webviews.OurLogoWebView"
+            android:label="@string/title_activity_our_logo_web_view" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.absolutelypafos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LookingFor.RestaurantLocations"
+            android:label="@string/title_activity_restaurant_locations" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.absolutelypafos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LookingFor.Cafe"
+            android:label="@string/title_activity_cafe" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.absolutelypafos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LookingFor.Bars"
+            android:label="@string/title_activity_bars" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.absolutelypafos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LookingFor.Clubs"
+            android:label="@string/title_activity_clubs" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.absolutelypafos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LookingFor.ATM"
+            android:label="@string/title_activity_atm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.absolutelypafos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LookingFor.Pharmacy"
+            android:label="@string/title_activity_pharmacy" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.absolutelypafos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LookingFor.GasStations"
+            android:label="@string/title_activity_gas" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.absolutelypafos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LookingFor.Museums"
+            android:label="@string/title_activity_museum" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.absolutelypafos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LookingFor.Hospitals"
+            android:label="@string/title_activity_hospital" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.absolutelypafos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".attractions.PaphosPark"
+            android:label="@string/title_activity_paphos_park" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".attractions.PaphosCastle"
+            android:label="@string/title_activity_paphos_castle" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".attractions.TompOfTheKings"
+            android:label="@string/title_activity_tomp_of_the_kings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".attractions.SaintPaulsPillar"
+            android:label="@string/title_activity_saint_pauls_pillar"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".attractions.SaintNeofytosMonastery"
+            android:label="@string/title_activity_saint_neofytos_monastery"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".attractions.ChrysorrogiatissaMonastery"
+            android:label="@string/title_activity_chrysorrogiatissa_monastery"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".attractions.RockofAphrodite"
+            android:label="@string/title_activity_rockof_aphrodite"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".attractions.TheHouseOfDionysus"
+            android:label="@string/title_activity_the_house_of_dionysus"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".attractions.AyiaKyriakiChrysopolitissa"
+            android:label="@string/title_activity_ayia_kyriaki_chrysopolitissa"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".attractions.LaraBayTurtleConservationStation"
+            android:label="@string/title_activity_lara_bay_turtle_conservation_station"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".attractions.VouniPanayiasWinery"
+            android:label="@string/title_activity_vouni_panayias_winery"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".attractions.PafosZoo"
+            android:label="@string/title_activity_pafos_zoo"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".webviews.MoreInformation"
+            android:label="@string/title_activity_more_information"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Map"
+            android:label="@string/title_activity_map"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Interact"
+            android:label="Interact"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Search"
+            android:label="Near Me"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".DirectionsActivity"
+            android:label="Directions Activity"
+            android:parentActivityName=".Interact" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Interact" />
+        </activity>
+        <activity
+            android:name=".bus.PafosRoutes"
+            android:label="@string/title_activity_pafos_routes" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".bus.PafosRoutes" />
+        </activity>
+        <activity
+            android:name=".bus.Route601"
+            android:label="@string/title_activity_route601" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".bus.PafosRoutes" />
+        </activity>
+        <activity
+            android:name=".bus.Route602"
+            android:label="@string/title_activity_route602" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".bus.PafosRoutes" />
+        </activity>
+        <activity
+            android:name=".bus.AirportRoutes"
+            android:label="@string/title_activity_airport_routes" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".bus.Route612"
+            android:label="@string/title_activity_route612" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".bus.AirportRoutes" />
+        </activity>
+        <activity
+            android:name=".bus.Route630"
+            android:label="@string/title_activity_route630" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".bus.PaphosVillagesBusRoutes" />
+        </activity>
+        <activity
+            android:name=".bus.Route632"
+            android:label="@string/title_activity_route632" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".bus.PaphosVillagesBusRoutes" />
+        </activity>
+        <activity
+            android:name=".bus.Route613"
+            android:label="@string/title_activity_route613" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".bus.AirportRoutes" />
+        </activity>
+        <activity
+            android:name=".bus.PaphosVillagesBusRoutes"
+            android:label="@string/title_activity_paphos_villages_bus_routes" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".bus.PolisLatchiRoutes"
+            android:label="@string/title_activity_polis_latchi_routes" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
     </application>
 

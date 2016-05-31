@@ -4,8 +4,16 @@
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 
-    <item android:id="@+id/action_showIntro" android:title="@string/action_showIntro"
-        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_showIntro"
+        android:title="@string/action_showIntro"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/change_city"
+        android:orderInCategory="1"
+        android:title="Change City"
+        app:showAsAction="never"/>
 
 
 </menu>

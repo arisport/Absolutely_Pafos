@@ -15,6 +15,8 @@ import com.absolutelypafos.adapter.CardAdapterLookingFor;
 
 public class AttractionsFragment extends Fragment {
 
+
+
     RecyclerView mRecyclerView;
     RecyclerView.LayoutManager mLayoutManager;
     RecyclerView.Adapter mAdapter;                                                                              //vertical

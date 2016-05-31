@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.absolutelypafos.CardAdapter;
 import com.absolutelypafos.R;
+import com.absolutelypafos.adapter.CardAdapterLookingFor;
 
 public class LookingForFragment extends Fragment {
 
@@ -36,7 +37,7 @@ public class LookingForFragment extends Fragment {
         mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(gridLayoutManager);
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
-        mAdapter = new CardAdapter(this.getActivity());
+        mAdapter = new CardAdapterLookingFor(this.getActivity());
         mRecyclerView.setAdapter(mAdapter);
 
         return rootView;

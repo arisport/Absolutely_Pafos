@@ -39,6 +39,12 @@ public class CategoriesGalleryFragment extends AppCompatActivity {
             return true;
         }
 
+        if (id == android.R.id.home){
+            this.finish();
+            overridePendingTransition(R.anim.rotate_out, R.anim.rotate_in);
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 }

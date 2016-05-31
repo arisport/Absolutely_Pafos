@@ -1,8 +1,17 @@
-package com.absolutelypafos;
+package com.absolutelypafos.model;
 
 public class Movie {
     private String mName;
     private int mThumbnail;
+    private String info;
+
+    public String getInfo() {
+        return info;
+    }
+
+    public void setInfo(String info) {
+        this.info = info;
+    }
 
     public String getName() {
         return mName;

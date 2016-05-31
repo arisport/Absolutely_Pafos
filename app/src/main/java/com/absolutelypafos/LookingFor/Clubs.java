@@ -2,10 +2,10 @@ package com.absolutelypafos.LookingFor;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,6 +14,8 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.absolutelypafos.R;
+import com.absolutelypafos.adapter.CustomListAdapterRestaurants;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -21,7 +23,7 @@ import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.pafos.paphosguide.R;
+
 
 public class Clubs extends AppCompatActivity {
     ListView list;
@@ -70,11 +72,11 @@ public class Clubs extends AppCompatActivity {
         list = (ListView) findViewById(R.id.listView);
 
 
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+       /* getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.actionbarcentre);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         actionbarcentre = (TextView) findViewById(R.id.mytext);
-        actionbarcentre.setText("Clubs");
+        actionbarcentre.setText("Clubs"); */
 
         map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
         CameraUpdate update = CameraUpdateFactory.newLatLngZoom(LOCATION_GENERAL, 13);
@@ -143,7 +145,7 @@ public class Clubs extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_clubs, menu);
+        getMenuInflater().inflate(R.menu.menu_restaurants_locations, menu);
         return true;
     }
 

@@ -8,7 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.pafos.paphosguide.R;
+import com.absolutelypafos.R;
+
 
 /**
  * Created by Aris on 19/01/2016.

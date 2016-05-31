@@ -10,7 +10,7 @@
     <!-- Nav Drawer Menu Items -->
     <string-array name="nav_drawer_items">
         <item >Home</item>
-        <item >Paphos City</item>
+        <item >Visit Cyprus</item>
         <item >The Institution</item>
         <item >Attractions</item>
         <item >Social Media</item>
@@ -80,7 +80,102 @@
     <string name="title_activity_categories_gallery_fragment">Photo Albums</string>
     <string name="title_activity_timeline_photos">Timeline Photos</string>
     <string name="title_activity_the_institution_web_view">The Institution</string>
+    <string name="title_activity_about">About Cyprus</string>
+    <string name="title_activity_entry">Entry Requirements</string>
+    <string name="title_activity_message_web_view">Message From Chairman</string>
+    <string name="title_activity_our_logo_web_view">Our Logo</string>
+    <string name="title_activity_restaurant_locations">Restaurants Locations</string>
+    <string name="title_activity_cafe">Cafe Locations</string>
+    <string name="title_activity_bars">Bars Locations</string>
+    <string name="title_activity_clubs">Clubs Locations</string>
+    <string name="title_activity_atm">ATM/Banks Locations</string>
+    <string name="title_activity_pharmacy">Pharmacy Locations</string>
+    <string name="title_activity_gas">Gas Stations Locations</string>
+    <string name="title_activity_museum">Museums Locations</string>
+    <string name="title_activity_hospital">Hospitals Locations</string>
+    <string name="title_activity_paphos_park">Paphos Archaeological Park</string>
+    <string name="title_activity_paphos_castle">Paphos Castle</string>
+    <string name="title_activity_tomp_of_the_kings">Tombs Of The Kings</string>
+    <string name="title_activity_saint_pauls_pillar">Saint Paul\'s Pillar</string>
+    <string name="title_activity_saint_neofytos_monastery">Saint Neofytos Monastery</string>
+    <string name="title_activity_chrysorrogiatissa_monastery">Chrysorrogiatissa Monastery</string>
+    <string name="title_activity_rockof_aphrodite">Rock of Aphrodite</string>
+    <string name="title_activity_the_house_of_dionysus">The House Of Dionysus</string>
+    <string name="title_activity_ayia_kyriaki_chrysopolitissa">Ayia Kyriaki Chrysopolitissa</string>
+    <string name="title_activity_lara_bay_turtle_conservation_station">Turtle Conservation Station
+    </string>
+    <string name="title_activity_vouni_panayias_winery">Vouni Panayias Winery</string>
+    <string name="title_activity_pafos_zoo">Pafos Zoo</string>
+    <string name="title_activity_more_information">More Information</string>
+    <string name="more_info"><u><b><i>For More Info Click On The Link Below</i></b></u></string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_pafos_routes">Pafos Routes</string>
+    <string name="title_activity_route601">Route 601</string>
+    <string name="title_activity_route602">Route 602</string>
+    <string name="title_activity_airport_routes">Airport Routes</string>
+    <string name="title_activity_route612">Route 612</string>
+    <string name="title_activity_route613">Route 613</string>
+    <string name="title_activity_route630">Route 630</string>
+    <string name="title_activity_route632">Route 632</string>
+    <string name="title_activity_paphos_villages_bus_routes">Paphos Villages Bus Routes</string>
+    <string name="title_activity_polis_latchi_routes">Polis-Latchi Routes</string>
 
 
+    <string-array name="place_type">
+        <item>airport</item>
+        <item>atm</item>
+        <item>bank</item>
+        <item>bus_station</item>
+        <item>church</item>
+        <item>doctor</item>
+        <item>hospital</item>
+        <item>cafe</item>
+        <item>movie_theater</item>
+        <item>clothing_store</item>
+        <item>restaurant</item>
+        <item>police</item>
+        <item>pharmacy</item>
+        <item>shopping_mall</item>
+        <item>taxi_stand</item>
+        <item>zoo</item>
+        <item>grocery_or_supermarket</item>
+        <item>stadium</item>
+    </string-array>
+
+    <string-array name="place_type_name">
+        <item>Airport</item>
+        <item>ATM</item>
+        <item>Bank</item>
+        <item>Bus Station</item>
+        <item>Church</item>
+        <item>Doctor</item>
+        <item>Hospital</item>
+        <item>Cafe</item>
+        <item>Movie Theater</item>
+        <item>Clothing stores</item>
+        <item>Restaurant</item>
+        <item>Police</item>
+        <item>Pharmacy</item>
+        <item>Shopping Mall</item>
+        <item>Taxi Stand</item>
+        <item>Zoo</item>
+        <item>Supermarket</item>
+        <item>Stadium</item>
+    </string-array>
+    <string name="title_activity_weather">Weather</string>
+
+    <string name="open_weather_maps_app_id">2dd860f43d4092d65c95071d8f37685b</string>
+
+    <string name="weather_sunny">&#xf00d;</string>
+    <string name="weather_clear_night">&#xf02e;</string>
+
+    <string name="weather_foggy">&#xf014;</string>
+    <string name="weather_cloudy">&#xf013;</string>
+    <string name="weather_rainy">&#xf019;</string>
+    <string name="weather_snowy">&#xf01b;</string>
+    <string name="weather_thunder">&#xf01e;</string>
+    <string name="weather_drizzle">&#xf01c;</string>
+
+    <string name="place_not_found">Sorry, no weather data found.</string>
 
 </resources>

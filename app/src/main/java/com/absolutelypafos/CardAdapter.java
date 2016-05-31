@@ -2,16 +2,17 @@ package com.absolutelypafos;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Color;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.absolutelypafos.model.Movie;
+import com.absolutelypafos.webviews.MessageWebView;
+import com.absolutelypafos.webviews.OurLogoWebView;
+import com.absolutelypafos.webviews.TheInstitutionWebView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -111,22 +112,22 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder>{
                             break;
                         case 1:
 
-                            Intent myIntent1 = new Intent(activitystored, Videos.class);
+                            Intent myIntent1 = new Intent(activitystored, MessageWebView.class);
                             activitystored.startActivity(myIntent1);
                             activitystored.overridePendingTransition(R.anim.rotate_out, R.anim.rotate_in);
                             break;
                         case 2:
-                            Intent myIntent2 = new Intent(activitystored, Gallery.class);
+                            Intent myIntent2 = new Intent(activitystored, OurLogoWebView.class);
                             activitystored.startActivity(myIntent2);
                             activitystored.overridePendingTransition(R.anim.rotate_out, R.anim.rotate_in);
                             break;
                         case 3:
-                            Intent myIntent3 = new Intent(activitystored, Gallery.class);
+                            Intent myIntent3 = new Intent(activitystored, TheInstitutionWebView.class);
                             activitystored.startActivity(myIntent3);
                             activitystored.overridePendingTransition(R.anim.rotate_out, R.anim.rotate_in);
                             break;
                         case 4:
-                            Intent myIntent4 = new Intent(activitystored, Gallery.class);
+                            Intent myIntent4 = new Intent(activitystored, MessageWebView.class);
                             activitystored.startActivity(myIntent4);
                             activitystored.overridePendingTransition(R.anim.rotate_out, R.anim.rotate_in);
                             break;
@@ -142,11 +143,9 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder>{
                             activitystored.overridePendingTransition(R.anim.rotate_out, R.anim.rotate_in);
                             break;
 
-
                         default:
                             break;
                     }
-
 
                 }
             });
