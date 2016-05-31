@@ -1,4 +1,4 @@
-package com.absolutelypafos;
+package com.absolutelypafos.webviews;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -8,7 +8,6 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.provider.Settings;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -16,22 +15,22 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.TextView;
 
+import com.absolutelypafos.R;
 import com.absolutelypafos.helper.WebViewController;
 
-public class TheInstitutionWebView extends AppCompatActivity {
+public class MessageWebView extends AppCompatActivity {
 
     WebView webView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.webview);
-
         webView = (WebView)findViewById(R.id.help_webview);
         if (isNetworkStatusAvialable(getApplicationContext())){
             webView.getSettings().setJavaScriptEnabled(true);
-            webView.loadUrl("http://www.pafos2017.eu/the-institution/?lang=en");
+            webView.loadUrl("http://www.pafos2017.eu/message-from-the-chairman/?lang=en");
             webView.setWebViewClient(new WebViewController());
             webView.getSettings().setLoadWithOverviewMode(true);
             webView.getSettings().setBuiltInZoomControls(true);
@@ -77,7 +76,7 @@ public class TheInstitutionWebView extends AppCompatActivity {
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog,
                                                     int which) {
-                                    TheInstitutionWebView.this.finish();
+                                    MessageWebView.this.finish();
                                 }
                             }).setIcon(android.R.drawable.ic_dialog_alert)
                     .show();
@@ -135,6 +134,12 @@ public class TheInstitutionWebView extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            return true;
+        }
+
+        if (id == android.R.id.home){
+            this.finish();
+            overridePendingTransition(R.anim.rotate_out, R.anim.rotate_in);
             return true;
         }
 
